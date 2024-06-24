@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Tentang Tanaman</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Warna latar belakang abu-abu muda */
+            color: #333; /* Warna teks hitam */
+        }
+        header {
+            background-color: #85b645; /* Warna latar belakang header hijau */
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #6e5656; /* Warna latar belakang navbar gelap */
+            overflow: hidden;
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555; /* Warna latar belakang saat hover */
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .quiz {
+            background-color: #ffffff; /* Warna latar belakang konten putih */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .quiz h2 {
+            color: #7fad39; /* Warna judul kuis hijau tua */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .quiz-question {
+            margin-bottom: 15px;
+        }
+        .quiz-question p {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .quiz-question label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .quiz-question input[type="radio"] {
+            margin-right: 10px;
+        }
+        .quiz-question input[type="radio"],
+        .quiz-question label {
+            vertical-align: middle;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container button {
+            background-color: #4CAF50; /* Warna latar belakang hijau */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .button-container button:hover {
+            background-color: #45a049; /* Warna latar belakang hijau tua saat hover */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kuis Tentang Tanaman</h1>
+</header>
+
+<nav>
+    <a href="index.html">Galeri Tanaman</a>
+    <a href="materi.html">Materi</a>
+    <a href="quiz.html">Kuis</a>
+    <a href="about.html">Tentang Pembuat</a>
+</nav>
+
+<div class="container">
+    <section class="quiz">
+        <h2>Kuis Tentang Tanaman</h2>
+        <form id="quizForm">
+            <div>
+                <label for="username">Masukkan Nama Anda:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="quiz-question">
+                <p>1. Tanaman yang tidak memiliki bunga disebut?</p>
+                <input type="radio" name="q1" value="a"> a. Pteridophyta<br>
+                <input type="radio" name="q1" value="b"> b. Bryophyta<br>
+                <input type="radio" name="q1" value="c"> c. Gymnospermae<br>
+            </div>
+            <div class="quiz-question">
+                <p>2. Bagian tumbuhan yang berfungsi sebagai alat transportasi zat adalah?</p>
+                <input type="radio" name="q2" value="a"> a. Batang<br>
+                <input type="radio" name="q2" value="b"> b. Daun<br>
+                <input type="radio" name="q2" value="c"> c. Bunga<br>
+            </div>
+            <div class="quiz-question">
+                <p>3. Tumbuhan yang hidup di atas tanah dan di dalam air disebut?</p>
+                <input type="radio" name="q3" value="a"> a. Epifit<br>
+                <input type="radio" name="q3" value="b"> b. Terestrial<br>
+                <input type="radio" name="q3" value="c"> c. Air<br>
+            </div>
+            <div class="quiz-question">
+                <p>4. Tumbuhan yang memiliki klorofil dan mampu membuat makanannya sendiri disebut?</p>
+                <input type="radio" name="q4" value="a"> a. Autotrof<br>
+                <input type="radio" name="q4" value="b"> b. Heterotrof<br>
+                <input type="radio" name="q4" value="c"> c. Mesotrof<br>
+            </div>
+            <div class="quiz-question">
+                <p>5. Berikut ini adalah tumbuhan berbiji terbuka, kecuali?</p>
+                <input type="radio" name="q5" value="a"> a. Pinus<br>
+                <input type="radio" name="q5" value="b"> b. Mangga<br>
+                <input type="radio" name="q5" value="c"> c. Kelapa<br>
+            </div>
+            <div class="quiz-question">
+                <p>6. Bagian tumbuhan yang berfungsi sebagai tempat melekatnya daun dan bunga adalah?</p>
+                <input type="radio" name="q6" value="a"> a. Batang<br>
+                <input type="radio" name="q6" value="b"> b. Daun<br>
+                <input type="radio" name="q6" value="c"> c. Akar<br>
+            </div>
+            <div class="quiz-question">
+                <p>7. Tumbuhan yang hidupnya menumpang pada tumbuhan lain disebut?</p>
+                <input type="radio" name="q7" value="a"> a. Epifit<br>
+                <input type="radio" name="q7" value="b"> b. Parasit<br>
+                <input type="radio" name="q7" value="c"> c. Terestrial<br>
+            </div>
+            <div class="quiz-question">
+                <p>8. Pada tumbuhan berbunga, bagian yang berfungsi sebagai tempat pembuahan disebut?</p>
+                <input type="radio" name="q8" value="a"> a. Benang Sari<br>
+                <input type="radio" name="q8" value="b"> b. Putik<br>
+                <input type="radio" name="q8" value="c"> c. Ovarium<br>
+            </div>
+            <div class="quiz-question">
+                <p>9. Bagian tumbuhan yang berfungsi untuk menyerap air dan nutrisi adalah?</p>
+                <input type="radio" name="q9" value="a"> a. Batang<br>
+                <input type="radio" name="q9" value="b"> b. Daun<br>
+                <input type="radio" name="q9" value="c"> c. Akar<br>
+            </div>
+            <div class="quiz-question">
+                <p>10. Tanaman yang dapat hidup di udara dan air disebut?</p>
+                <input type="radio" name="q10" value="a"> a. Semi<br>
+                <input type="radio" name="q10" value="b"> b. Terestrial<br>
+                <input type="radio" name="q10" value="c"> c. Epifit<br>
+            </div>
+            
+            <div class="button-container">
+                <button type="submit">Submit Jawaban</button>
+            </div>
+        </form>
+        <div class="result" id="result"></div>
+    </section>
+</div>
+
+<script>
+    document.getElementById('quizForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Mencegah form submit default
+
+        const answers = {
+            q1: 'b',
+            q2: 'a',
+            q3: 'b',
+            q4: 'a',
+            q5: 'b',
+            q6: 'a',
+            q7: 'a',
+            q8: 'b',
+            q9: 'c',
+            q10: 'a'
+        };
+
+        let score = 0;
+        let totalQuestions = 10;
+        let resultText = "<h2>Hasil Kuis</h2><ul>";
+
+        for (let i = 1; i <= totalQuestions; i++) {
+            let questionName = 'q' + i;
+            let selectedOption = document.querySelector('input[name="' + questionName + '"]:checked');
+            
+            if (selectedOption) {
+                let userAnswer = selectedOption.value;
+                if (userAnswer === answers[questionName]) {
+                    score++;
+                    resultText += "<li>Soal " + i + ": Benar</li>";
+                } else {
+                    resultText += "<li>Soal " + i + ": Salah (Jawaban benar: " + answers[questionName] + ")</li>";
+                }
+            } else {
+                resultText += "<li>Soal " + i + ": Tidak dijawab (Jawaban benar: " + answers[questionName] + ")</li>";
+            }
+        }
+
+        resultText += "</ul>";
+        resultText += "<p>Skor Anda: " + score + " dari " + totalQuestions + "</p>";
+        document.getElementById('result').innerHTML = resultText;
+    });
+</script>
+
+</body>
+</html>
+
+

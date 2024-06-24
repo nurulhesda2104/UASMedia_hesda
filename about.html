@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif; /* Disesuaikan dengan index.html */
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Disesuaikan dengan index.html */
+        }
+        header {
+            background-color: #85b645; /* Disesuaikan dengan index.html */
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #6e5656;
+            overflow: hidden;
+            text-align: center;
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .profile-box {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(186, 157, 157, 0.1);
+            margin-top: 40px;
+        }
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            display: block;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .profile-image:hover {
+            transform: scale(1.1); /* Membesarkan gambar */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Menambah bayangan */
+        }
+        .about-text {
+            text-align: center;
+            margin-top: 20px;
+            animation: textMove 3s infinite alternate; /* Menambahkan animasi pada teks */
+        }
+        @keyframes textMove {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>PROFIL</h1>
+</header>
+
+<nav>
+    <a href="index.html">Galeri Tanaman</a>
+    <a href="materi.html">Materi</a>
+    <a href="quiz.html">Kuis</a>
+    <a href="about.html">Tentang Pembuat</a>
+</nav>
+
+<div class="container">
+    <section class="profile-box">
+        <img class="profile-image" src="hesda.jpg" alt="Foto Profil Saya">
+        <div class="about-text">
+            <h2>Nurul Hesda</h2>
+            <p>"Mahasiswa Pendidikan Komputer Angkatan 2022"</p>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
